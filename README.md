@@ -1,3 +1,3 @@
-GEEK BRAINS
+GEEK BRAINS COURSE
 Учебный проект
 SHOP
