@@ -25,38 +25,38 @@
         </div>
     </header>
     <div class = "intro_registration">
-        <h1 class = "intro_registration-heading">registration</h1>
+        <h1 class = "intro_registration-heading container">registration</h1>
     </div>
     <main class="main__registration container">
         <form class = "form" action="" method="get">
             <div class = "form__name">
                 <label class="form__label" for="name">Your Name</label>
-                <input class="form__input" type="text" value="First Name" id="name">
-                <input class="form__input" type="text" value="Last Name">
+                <input class="form__input" type="text" placeholder="First Name" id="name">
+                <input class="form__input" type="text" placeholder="Last Name" id="name">
             </div>
-            <div>
-                <input type="radio" id="contactChoice1" name="contact" value="email">
+            <div class="form_radio-input">
+                <input class="radio-input" type="radio" id="contactChoice1" name="contact" value="email">
                 <label for="contactChoice1">Male</label>
-                <input type="radio" id="contactChoice2" name="contact" value="phone">
+                <input class="radio-input" type="radio" id="contactChoice2" name="contact" value="phone">
                 <label for="contactChoice2">Female</label>
             </div>
-            <div>
+            <div class="form__contact">
                 <label class="form__label" for="">Login details</label>
-                <input class="form__input" type="email">
-                <input class="form__input"type="password">
-                <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <input class="form__input" type="email" placeholder="Email" id="name">
+                <input class="form__input" type="password" placeholder="Password" id="name">
+                <p class="form__contact-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
             </div>
-            <a href="#">join now</a>
+            <button class="form__link">join now <img class="form__link-img" src="./img/link-strelka.svg" alt="icon"></button>
         </form>
-        <div class="text">
-            <h2>loyalty has its perks</h2>
-            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-            <ul>
-                <li>15% off welcome offer</li>
-                <li>Free shipping, returns and exchanges on all orders</li>
-                <li>$10 off a purchase on your birthday</li>
-                <li>Early access to products</li>
-                <li>Exclusive offers & rewards</li>
+        <div class="text__registration">
+            <h2 class="text__registration-heading">loyalty has its perks</h2>
+            <p class="text__registration-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul class="text__registration-list">
+                <li class="text__registration-item">15% off welcome offer</li>
+                <li class="text__registration-item">Free shipping, returns and exchanges on all orders</li>
+                <li class="text__registration-item">$10 off a purchase on your birthday</li>
+                <li class="text__registration-item">Early access to products</li>
+                <li class="text__registration-item">Excluclass="text__registration-item"sive offers & rewards</li>
             </ul>
         </div>
     </main>
