@@ -190,12 +190,27 @@ body {
     margin-bottom: 63px;
 }
 
+.fetured__item-img {
+    position: relative;
+}
+
 .fetured__button {
-    display: none;
+    width: 138px;
+    height: 43px;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 17px;
+    color: white;
+    border: 1px solid #FFFFFF;
+    position: absolute;
+}
+
+.fetured__overlay {
+    width:360px;
+    height: 420px;
+    background: rgba(58,56,56,0.86);
+    position: absolute;
 }
 
 .fetured__heading-item {
@@ -235,7 +250,6 @@ body {
     color: var(--pink-dark-color);
     text-decoration: none;
     padding: 13px 38px;
-    margin-left: 694px;
 }
 
 .advanteges {
@@ -332,4 +346,155 @@ body {
 
 .footer__bottom-link {
     margin-top:32px;
+}
+
+.form__index-email {
+    width: 100px;
+    display: block;
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #918f8f;
+    padding: 7px 130px 6px 22px;
+    background-color: #E1E1E1;
+    border-radius: 25px 0 0 25px
+}
+
+.form__index {
+    display: flex;
+    min-height: 50px;
+    margin-top: 30px;
+}
+
+.form__submit {
+    width: 100px;
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color:#FFFFFF;
+    background-color:#F16D7F;
+    border-radius: 0 25px 25px 0;
+}
+
+.main__registration {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro_registration {
+    min-height: 148px;
+    background-color: #F8F3F4;
+    ;
+}
+
+.intro_registration-heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding: 59px 0 60px;
+}
+
+.form__input {
+    display: block;
+    margin-top: 20px;
+    padding-left: 17px;
+}
+
+.form__label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    color: #222222;
+}
+
+input {
+    width: 360px;
+    min-height: 45px;
+    border: 1px solid #A4A4A4;
+}
+
+.radio-input {
+    display: none;
+}
+
+#name::-webkit-input-placeholder {
+    color: #B1B1B1;
+    font-family: Lato;
+    font-size: 13., px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.form_radio-input {
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+
+.form__contact-text {
+    max-width: 360px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    color:#B1B1B1;
+    margin-top: 15px;
+    margin-bottom: 39px;
+}
+
+.form__link {
+    width: 167px;
+    height: 50px;
+    background-color: var(--pink-dark-color);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: 96px;
+}
+
+.form__link-img {
+    padding-left: 20px;
+}
+
+.text__registration{
+    max-width: 652px;
+}
+
+.text__registration-heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.text__registration-text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+.text__registration-list {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 45px;
+    list-style: none;
+    position: relative;
+}
+
+.text__registration-item::before {
+    content: url(./img/icon-checkmark.svg);
+    position: absolute;
+    left: 0;
+
 }

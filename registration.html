@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class = header>
+        <div class="container header__wrapper">
+        <div class="header__logo-wrapper">
+            <img class = "header__logo" src="./img/logo-top.svg" alt="logo" width="44" height="38">
+            <img src="./img/loupa.svg" alt="loupa" width="27" height="28">
+        </div>
+        <ul class = "header__list">
+            <li><button class = "header__button"><img src="./img/burger.svg" alt="menu"></button></li>
+            <li><button class = "header__button"><img src="./img/man.svg" alt="prof"></button></li>
+            <li><button class = "header__button"><img src="./img/cart.svg" alt="cart"></button></li>
+        </ul>
+        </div>
+    </header>
+    <div class = "intro_registration">
+        <h1 class = "intro_registration-heading container">registration</h1>
+    </div>
+    <main class="main__registration container">
+        <form class = "form" action="" method="get">
+            <div class = "form__name">
+                <label class="form__label" for="name">Your Name</label>
+                <input class="form__input" type="text" placeholder="First Name" id="name">
+                <input class="form__input" type="text" placeholder="Last Name" id="name">
+            </div>
+            <div class="form_radio-input">
+                <input class="radio-input" type="radio" id="contactChoice1" name="contact" value="email">
+                <label for="contactChoice1">Male</label>
+                <input class="radio-input" type="radio" id="contactChoice2" name="contact" value="phone">
+                <label for="contactChoice2">Female</label>
+            </div>
+            <div class="form__contact">
+                <label class="form__label" for="">Login details</label>
+                <input class="form__input" type="email" placeholder="Email" id="name">
+                <input class="form__input" type="password" placeholder="Password" id="name">
+                <p class="form__contact-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            </div>
+            <button class="form__link">join now <img class="form__link-img" src="./img/link-strelka.svg" alt="icon"></button>
+        </form>
+        <div class="text__registration">
+            <h2 class="text__registration-heading">loyalty has its perks</h2>
+            <p class="text__registration-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul class="text__registration-list">
+                <li class="text__registration-item">15% off welcome offer</li>
+                <li class="text__registration-item">Free shipping, returns and exchanges on all orders</li>
+                <li class="text__registration-item">$10 off a purchase on your birthday</li>
+                <li class="text__registration-item">Early access to products</li>
+                <li class="text__registration-item">Excluclass="text__registration-item"sive offers & rewards</li>
+            </ul>
+        </div>
+    </main>
+    <footer class = footer>
+        <div class = "footer__background-img">
+            <div class="footer__container container">
+                <div class="footer__img">
+                    <img class="footer__img-img" src="./img/footer-face-copy.png" alt="photo" width="150" height="150">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </div>
+                <div class="footer__form">
+                    <p>subscribe <span class="footer__form-text">for our newletter and promotion</span></p>
+                    <form class = "form__index" action="" method="get">
+                        <input class="form__index-email" type="email" value="Enter Your Email">
+                        <button class="form__submit" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class = "footer__bottom">
+            <div class="footer__container container">
+                <p class="footer__bottom-text">© 2021  Brand  All Rights Reserved.</p>
+                <div class="footer__bottom-link">
+                    <a href="#"><img src="./img/logo-facebook.svg" alt="logo"></a>
+                    <a href="#"><img src="./img/logo-insta.svg" alt="logo"></a>
+                    <a href="#"><img src="./img/logo-pinterest.svg" alt="logo"></a>
+                    <a href="#"><img src="./img/logo-twitter.svg" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
