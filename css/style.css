@@ -22,6 +22,26 @@ body {
   margin: 0 auto;
 }
 
+.form__input {
+  display: block;
+  margin-top: 20px;
+  padding-left: 17px;
+}
+
+.form__legend {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  color: #222222;
+}
+
+input {
+  width: 360px;
+  min-height: 45px;
+  border: 1px solid #A4A4A4;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -270,7 +290,7 @@ table {
   font-style: normal;
   font-weight: 300;
   line-height: 16,8px;
-  color: var(--grey-text-color);
+  color: #5D5D5D;
 }
 
 .fetured__price-item {
@@ -278,18 +298,18 @@ table {
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
-  color: var(--pink-dark-color);
+  color: #F16D7F;
   padding-top: 18px;
   padding-bottom: 20px;
 }
 
 .fetured__nextpage {
-  border: 1px solid var(--pink-dark-color);
+  border: 1px solid #F16D7F;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
-  color: var(--pink-dark-color);
+  color: #F16D7F;
   text-decoration: none;
   padding: 13px 38px;
 }
@@ -333,7 +353,7 @@ table {
 
 .footer__background-img {
   min-height: 448px;
-  background-image: url();
+  background-image: url(../img/footer-background.jpg);
   background-size: cover;
 }
 
@@ -342,7 +362,7 @@ table {
   font-style: italic;
   font-weight: 400;
   line-height: 24px;
-  color: var(--grey-dark-color);
+  color: #222224;
   width: 360px;
   text-align: center;
   margin-top: 86px;
@@ -353,7 +373,7 @@ table {
   font-style: normal;
   font-weight: 700;
   line-height: 38px;
-  color: var(--grey-dark-color);
+  color: #222224;
   margin-top: 150px;
   text-transform: uppercase;
   text-align: center;
@@ -374,7 +394,7 @@ table {
 
 .footer__bottom {
   min-height: 80px;
-  background-color: var(--grey-dark-color);
+  background-color: #222224;
 }
 
 .footer__bottom-text {
@@ -388,5 +408,238 @@ table {
 
 .footer__bottom-link {
   margin-top: 32px;
+}
+
+.form__index-email {
+  width: 100px;
+  display: block;
+  border: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  color: #918f8f;
+  padding: 7px 130px 6px 22px;
+  background-color: #E1E1E1;
+  border-radius: 25px 0 0 25px;
+}
+
+.form__index {
+  display: flex;
+  min-height: 50px;
+  margin-top: 30px;
+}
+
+.form__submit {
+  width: 100px;
+  border: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  border-radius: 0 25px 25px 0;
+}
+
+.main__registration {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro_registration {
+  min-height: 148px;
+  background-color: #F8F3F4;
+}
+
+.intro_registration-heading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  padding: 59px 0 60px;
+  margin-bottom: 64px;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  margin: 0 0 0 20px;
+  position: relative;
+  padding: 0 20px 0 10px;
+}
+
+.radio-label:before {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 17px;
+  border: 1px solid #A4A4A4;
+  border-radius: 50%;
+  left: -20px;
+  top: 2px;
+}
+
+#name::-webkit-input-placeholder {
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.form_radio-input {
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.form__contact-text {
+  max-width: 360px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.form__link {
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 96px;
+}
+
+.form__link-img {
+  padding-left: 20px;
+}
+
+.text__registration {
+  max-width: 652px;
+}
+
+.text__registration-heading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.text__registration-text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+  margin-bottom: 21px;
+}
+
+.text__registration-list {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 45px;
+  list-style: none;
+  padding-left: 43px;
+  position: relative;
+}
+
+.text__registration-item::before {
+  content: url(../img/icon-checkmark.svg);
+  position: absolute;
+  left: 0;
+}
+
+fieldset {
+  border: 0 none;
+}
+
+.section_cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.good {
+  width: 652px;
+  min-height: 306px;
+  display: flex;
+  margin-bottom: 40px;
+  box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+}
+
+.address_button {
+  border: 1px solid #A4A4A4;
+  background-color: #FFFFFF;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  padding: 10px 14px 12px;
+  margin-top: 24px;
+  margin-bottom: 57px;
+}
+
+.total {
+  width: 360px;
+  min-height: 214px;
+  background-color: #F5F3F3;
+}
+
+.total_text-sub {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: uppercase;
+  padding-top: 39px;
+  padding-bottom: 12px;
+  padding-right: 34px;
+  text-align: right;
+  color: #4A4A4A;
+}
+
+.total_text-grand {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  text-transform: uppercase;
+  padding-right: 34px;
+  text-align: right;
+  color: #4A4A4A;
+}
+
+.total_sum {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.total_button {
+  width: 273px;
+  min-height: 50px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #F16D7F;
+  margin: 39px 43px;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */

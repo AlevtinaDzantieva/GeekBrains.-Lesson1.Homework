@@ -1,0 +1,78 @@
+.section_cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.good {
+    width: 652px;
+    min-height: 306px;
+    display: flex;
+    margin-bottom: 40px;
+    box-shadow:17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+}
+
+.address_button {
+    border: 1px solid #A4A4A4;
+    background-color:#FFFFFF;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 13px;
+    text-transform: uppercase;
+    color:#4A4A4A;
+    padding: 10px 14px 12px;
+    margin-top: 24px;
+    margin-bottom: 57px;
+}
+
+.total {
+    width: 360px;
+    min-height: 214px;
+    background-color:#F5F3F3;
+}
+
+.total_text-sub {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    text-transform: uppercase;
+    padding-top: 39px;
+    padding-bottom: 12px;
+    padding-right: 34px;
+    text-align: right;
+    color: $grey-dark-text-color;
+}
+
+.total_text-grand {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding-right: 34px;
+    text-align: right;
+    color: $grey-dark-text-color;
+}
+
+.total_sum {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    color: $pink-dark-color;
+}
+
+.total_button {
+    width: 273px;
+    min-height: 50px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    background-color: $pink-dark-color;
+    margin: 39px 43px;
+    border: none;
+}
