@@ -442,7 +442,7 @@ table {
   border-radius: 0 25px 25px 0;
 }
 
-.main__registration {
+.main_registration {
   display: flex;
   justify-content: space-between;
 }
@@ -450,6 +450,7 @@ table {
 .intro_registration {
   min-height: 148px;
   background-color: #F8F3F4;
+  margin-bottom: 64px;
 }
 
 .intro_registration-heading {
@@ -578,7 +579,7 @@ fieldset {
 }
 
 .address_button {
-  border: 1px solid #A4A4A4;
+  border: 1px solid #4A4A4A;
   background-color: #FFFFFF;
   font-size: 11px;
   font-style: normal;

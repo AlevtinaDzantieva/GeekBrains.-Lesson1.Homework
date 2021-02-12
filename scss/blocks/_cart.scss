@@ -8,18 +8,18 @@
     min-height: 306px;
     display: flex;
     margin-bottom: 40px;
-    box-shadow:17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
 }
 
 .address_button {
-    border: 1px solid #A4A4A4;
-    background-color:#FFFFFF;
+    border: 1px solid $grey-dark-text-color;
+    background-color: $white;
     font-size: 11px;
     font-style: normal;
     font-weight: 300;
     line-height: 13px;
     text-transform: uppercase;
-    color:#4A4A4A;
+    color: $grey-dark-text-color;
     padding: 10px 14px 12px;
     margin-top: 24px;
     margin-bottom: 57px;
@@ -70,7 +70,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: 19px;
-    color:#FFFFFF;
+    color: $white;
     text-transform: uppercase;
     background-color: $pink-dark-color;
     margin: 39px 43px;
