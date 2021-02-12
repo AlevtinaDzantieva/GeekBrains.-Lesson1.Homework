@@ -407,7 +407,7 @@ body {
     padding-left: 17px;
 }
 
-.form__label {
+.form__legend {
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -496,5 +496,8 @@ input {
     content: url(./img/icon-checkmark.svg);
     position: absolute;
     left: 0;
+}
 
+fieldset {
+    border: 0 none;
 }
