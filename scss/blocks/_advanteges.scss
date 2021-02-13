@@ -1,11 +1,24 @@
 .advanteges {
     min-height: 341px;
     background-color: $grey-dark-color;
-    margin-top: 109px;
+    margin-top: 95px;
+
+    @include tablet {
+        margin-top: 65px;
+        min-height: 610px;
+    }
+
+    @include mobile {
+        margin-top: 96px;
+    }
 }
 
 .advanteges__list {
     display: flex;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .advanteges__item {
@@ -13,6 +26,10 @@
     flex-direction: column;
     align-items: center;
     padding-top: 103px;
+
+    @include tablet{
+        padding-top: 48px;
+    }
 }
 
 .advanteges__heading-item {
@@ -33,4 +50,8 @@
     line-height: 17px;
     color: #FBFBFB;
     text-align: center;
+
+    @include tablet {
+        width: 360px;
+    }
 }
