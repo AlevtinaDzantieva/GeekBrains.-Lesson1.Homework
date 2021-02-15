@@ -37,7 +37,7 @@ body {
 }
 
 input {
-    width: 360px;
+    width: 341px;
     min-height: 45px;
     border: 1px solid #A4A4A4;
 }
@@ -45,6 +45,12 @@ input {
 @media (max-width: $tablet-width) {
     .container {
         width: 96%;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .container {
+        width: 98%;
     }
 }
 

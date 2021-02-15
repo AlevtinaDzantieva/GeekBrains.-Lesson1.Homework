@@ -33,8 +33,8 @@
 	margin: 0 0 0 33px;
 }
 
-@media (max-width: $mobile-width) {
-	.mobile-hide {
+.mobile-hide {
+	@include mobile {
 		display: none;
 	}
 }

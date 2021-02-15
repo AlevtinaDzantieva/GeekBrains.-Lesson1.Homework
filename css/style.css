@@ -37,7 +37,7 @@ body {
 }
 
 input {
-  width: 360px;
+  width: 341px;
   min-height: 45px;
   border: 1px solid #A4A4A4;
 }
@@ -45,6 +45,12 @@ input {
 @media (max-width: 768px) {
   .container {
     width: 96%;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 98%;
   }
 }
 
@@ -725,10 +731,22 @@ table {
   justify-content: space-between;
 }
 
+@media (max-width: 375px) {
+  .main_registration {
+    flex-direction: column;
+  }
+}
+
 .intro_registration {
   min-height: 148px;
   background-color: #F8F3F4;
   margin-bottom: 64px;
+}
+
+@media (max-width: 768px) {
+  .intro_registration {
+    margin-bottom: 40px;
+  }
 }
 
 .intro_registration-heading {
@@ -740,6 +758,14 @@ table {
   text-transform: uppercase;
   padding: 59px 0 60px;
   margin-bottom: 64px;
+}
+
+@media (max-width: 375px) {
+  .intro_registration-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .radio-input {
@@ -798,6 +824,12 @@ table {
   margin-bottom: 96px;
 }
 
+@media (max-width: 375px) {
+  .form__link {
+    margin-bottom: 40px;
+  }
+}
+
 .form__link-img {
   padding-left: 20px;
 }
@@ -815,12 +847,37 @@ table {
   margin-bottom: 22px;
 }
 
+@media (max-width: 768px) {
+  .text__registration-heading {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .text__registration-heading {
+    margin-bottom: 32px;
+  }
+}
+
 .text__registration-text {
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
   line-height: 29px;
-  margin-bottom: 21px;
+  padding-bottom: 21px;
+}
+
+@media (max-width: 768px) {
+  .text__registration-text {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+    width: 354px;
+  }
 }
 
 .text__registration-list {
@@ -831,6 +888,22 @@ table {
   list-style: none;
   padding-left: 43px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .text__registration-list {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 23px;
+  }
+}
+
+@media (max-width: 375px) {
+  .text__registration-list {
+    margin-bottom: 100px;
+  }
 }
 
 .text__registration-item::before {
