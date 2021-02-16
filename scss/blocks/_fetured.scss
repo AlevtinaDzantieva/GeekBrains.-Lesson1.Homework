@@ -23,6 +23,14 @@
     justify-content: space-between;
     margin-top: 47px;
     margin-bottom: 48px;
+
+    @include tablet {
+        margin-bottom: 15px;
+    }
+
+    @include mobile {
+        margin-bottom: 23px;
+    }
 }
 
 .fetured__item {
@@ -30,14 +38,20 @@
     flex-direction: column;
     box-sizing: border-box;
     max-width: 360px;
-    margin-bottom: 63px;
+    min-height: 581px;
+    background-color: $grey-light-card;
+    margin-bottom: 30px;
+
+    @include tablet {
+        margin-bottom: 18px;
+    }
 }
 
 .fetured__item-img {
     position: relative;
 }
 
-.fetured__button {
+.fetured__button-cart {
     width: 138px;
     height: 43px;
     font-size: 14px;
@@ -47,6 +61,7 @@
     color: white;
     border: 1px solid #FFFFFF;
     position: absolute;
+    display: none;
 }
 
 .fetured__overlay {
@@ -54,6 +69,7 @@
     height: 420px;
     background: rgba(58,56,56,0.86);
     position: absolute;
+    display: none;
 }
 
 .fetured__heading-item {
@@ -86,6 +102,7 @@
 
 .fetured__nextpage {
     border: 1px solid $pink-dark-color;
+    background-color: $white;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -93,4 +110,9 @@
     color: $pink-dark-color;
     text-decoration: none;
     padding: 13px 38px;
+}
+
+.fetured__button-nextpage {
+    display: flex;
+    justify-content: center;
 }

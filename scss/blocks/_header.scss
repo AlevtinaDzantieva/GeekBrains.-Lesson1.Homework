@@ -32,3 +32,9 @@
 	border: none; 
 	margin: 0 0 0 33px;
 }
+
+.mobile-hide {
+	@include mobile {
+		display: none;
+	}
+}

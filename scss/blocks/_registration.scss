@@ -1,12 +1,20 @@
 .main_registration {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .intro_registration {
     min-height: 148px;
     background-color: #F8F3F4;
     margin-bottom: 64px;
+
+    @include tablet {
+        margin-bottom: 40px;
+    }
 }
 
 .intro_registration-heading {
@@ -18,6 +26,10 @@
     text-transform: uppercase;
     padding: 59px 0 60px;
     margin-bottom: 64px;
+
+    @include mobile {
+        @include flex-center();
+    }
 }
 
 .radio-input {
@@ -74,6 +86,10 @@
     border: none;
     text-transform: uppercase;
     margin-bottom: 96px;
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
 }
 
 .form__link-img {
@@ -91,6 +107,14 @@
     line-height: 29px;
     text-transform: uppercase;
     margin-bottom: 22px;
+
+    @include tablet {
+        @include font (16px, 19px, 300);
+    }
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
 }
 
 .text__registration-text {
@@ -98,7 +122,12 @@
     font-style: normal;
     font-weight: 300;
     line-height: 29px;
-    margin-bottom: 21px;
+    padding-bottom: 21px;
+
+    @include tablet {
+        @include font (16px, 19px,300);
+        width: 354px;
+    }
 }
 
 .text__registration-list {
@@ -109,6 +138,15 @@
     list-style: none;
     padding-left: 43px;
     position: relative;
+
+    @include tablet {
+        @include font (16px, 40px, 300);
+        padding-left: 23px;
+    }
+
+    @include mobile {
+        margin-bottom: 100px;
+    }
 }
 
 .text__registration-item::before {
