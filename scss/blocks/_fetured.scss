@@ -47,7 +47,7 @@
     }
 }
 
-.fetured__item-img {
+.fetured__item {
     position: relative;
 }
 
@@ -61,7 +61,11 @@
     color: white;
     border: 1px solid #FFFFFF;
     position: absolute;
+    top: 36%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: none;
+    background: transparent;
 }
 
 .fetured__overlay {
@@ -112,7 +116,20 @@
     padding: 13px 38px;
 }
 
+.fetured__nextpage:hover {
+    background-color: $pink-dark-color;
+    color: $white;
+}
+
 .fetured__button-nextpage {
     display: flex;
     justify-content: center;
+}
+
+.fetured__item:hover .fetured__overlay {
+    display: block;
+}
+
+.fetured__item:hover .fetured__button-cart {
+    display: block;
 }

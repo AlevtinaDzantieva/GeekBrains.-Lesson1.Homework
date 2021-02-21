@@ -8,6 +8,10 @@
         flex-direction: column;
         align-items: center;
     }
+
+    @include mobile {
+        min-height: 550px;
+    }
 }
 
 .footer__img {
@@ -23,8 +27,20 @@
     @include tablet {
         margin-top: 53px;
     }
+
+    @include mobile {
+        @include font (18px, 22px, 400);
+        margin-top: 64px;
+    }
 }
 
+.footer__img-img {
+    @include mobile {
+        width: 25%;
+        height: 25%;
+        margin-bottom: 30px;
+    }
+}
 .footer__form {
     font-size: 24px;
     font-style: normal;
@@ -38,6 +54,11 @@
     @include tablet {
         margin-top: 78px;
     }
+
+    @include mobile {
+        margin-top: 59px;
+
+    }
 }
 
 .footer__form-text {
@@ -46,6 +67,10 @@
     font-weight: 400;
     line-height: 30px;
     display: block;
+
+    @include mobile {
+        @include font (14px, 21px);
+    }
 }
 
 .footer__container {
@@ -66,6 +91,7 @@
         flex-direction: column;
         align-items: center;
         min-height: 143px;
+        justify-content: center;
     }
 }
 
@@ -81,11 +107,16 @@
     line-height: 19px;
     color: #FBFBFB;
     margin-top: 30px;
+
+    @include mobile {
+        margin-top: 0;
+    }
 }
 
 .footer__bottom-link {
     margin-top:32px;
 }
+
 
 .form__index-email {
     width: 100px;
@@ -98,7 +129,11 @@
     color: #918f8f;
     padding: 7px 130px 6px 22px;
     background-color: #E1E1E1;
-    border-radius: 25px 0 0 25px
+    border-radius: 25px 0 0 25px;
+}
+
+.form__index-email:hover {
+    transform: scale(1.1);
 }
 
 .form__index {
@@ -119,16 +154,26 @@
     border-radius: 0 25px 25px 0;
 }
 
+.form__submit:hover {
+    transform: scale(1.1);
+}
+
 .footer__icon {
-    width: 32px;
-    height: 32px;
-    background-color: $white;
-    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+.footer__icon:hover {
+    transform: scale(1.1);
 }
 
 .footer__icon-inst {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     background-color: $pink-dark-color;
     border: none;
+}
+
+.footer__icon-inst:hover {
+    transform: scale(1.1);
 }

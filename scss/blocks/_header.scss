@@ -1,6 +1,5 @@
 .container__hover-menu {
 	position: relative;
-	display: inline-block;
 }
 
 .container__hover-menu:hover .header__navigation {
@@ -12,6 +11,7 @@
 	width: 232px;
 	background-color: $white;
 	position: absolute;
+	margin-top: 25px;
 }
 
 .navigation-heading-menu {
@@ -41,6 +41,14 @@
 	color: $grey-medium-text-color;
 	text-decoration: none;
 	padding-left: 55px;
+}
+
+.overlay-menu {
+	width:360px;
+    height: 420px;
+    background: rgba(58,56,56,0.86);
+    position: absolute;
+    display: none;
 }
 
 .header {
