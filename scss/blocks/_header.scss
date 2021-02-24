@@ -71,6 +71,42 @@
 	margin: 0 41px 0 0;
 }
 
+.header__input-search {
+	width: 200px;
+	min-height: 30px;
+	display: none;
+}
+
+.header__button-search {
+	width: 70px;
+	min-height: 30px;
+	margin-left: 5px;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+	color: $grey-light-color;
+	background-color: $white;
+	border: none;
+	display: none;
+}
+
+.header__search {
+	display: flex;
+}
+
+.header__search-loupa:hover .header__input-search {
+	display: block;
+}
+
+.header__search-loupa:hover .header__button-search {
+	display: block;
+}
+
+.header__search-loupa:hover .loupa {
+	display: none;
+}
+
 .header__list {
 	display: flex;
 }
