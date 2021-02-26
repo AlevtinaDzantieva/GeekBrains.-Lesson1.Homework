@@ -97,6 +97,7 @@
     border: none;
     text-transform: uppercase;
     margin-bottom: 96px;
+    transition: background-color 700ms, color 700ms;
 
     @include mobile {
         margin-bottom: 40px;
@@ -106,6 +107,7 @@
 .form__link:hover {
     background-color: $white;
     color: $pink-dark-color;
+    transition: background-color 700ms, color 700ms;
 }
 
 .form__link-img {

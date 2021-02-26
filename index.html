@@ -15,15 +15,23 @@
         <div class="container header__wrapper">
             <div class="header__logo-wrapper">
                 <img class = "header__logo" src="./img/logo-top.svg" alt="logo" width="44" height="38">
-                <img src="./img/loupa.svg" alt="loupa" width="27" height="28">
+                <div class="header__search-loupa">
+                    <div class="loupa">
+                        <img class="header__logo-loupa" src="./img/loupa.svg" alt="loupa" width="27" height="28">
+                    </div>
+                    <div class="header__search">
+                        <input class="header__input-search" type="search" name="search" id="site-search">
+                        <button class="header__button-search">Search</button>
+                    </div>
+                </div>
             </div>
             <ul class = "header__list">
                 <div class="container__hover-menu">
-                        <button class = "header__button">
-                            <svg class="header__icon" width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z">
-                            </svg>
-                        </button>
+                    <button class = "header__button">
+                        <svg class="header__icon" width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z">
+                        </svg>
+                    </button>
                     <nav class = "header__navigation">
                         <h2 class="navigation-heading-menu">menu</h2>
                         <h3 class="navigation-heading">man</h3>

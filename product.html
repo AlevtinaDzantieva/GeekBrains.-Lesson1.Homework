@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./scss/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class = header>
+        <div class="container header__wrapper">
+            <div class="header__logo-wrapper">
+                <img class = "header__logo" src="./img/logo-top.svg" alt="logo" width="44" height="38">
+                <img src="./img/loupa.svg" alt="loupa" width="27" height="28">
+            </div>
+            <ul class = "header__list">
+                <div class="container__hover-menu">
+                        <button class = "header__button">
+                            <svg class="header__icon" width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z">
+                            </svg>
+                        </button>
+                    <nav class = "header__navigation">
+                        <h2 class="navigation-heading-menu">menu</h2>
+                        <h3 class="navigation-heading">man</h3>
+                        <ul class="navigation-list">
+                            <li><a class="navigation-item" href="#">Accessories</a></li>
+                            <li><a class="navigation-item" href="#">Bags</a></li>
+                            <li><a class="navigation-item" href="#">Denim</a></li>
+                            <li><a class="navigation-item" href="#">T-Shirts</a></li>
+                        </ul>
+                        <h3 class="navigation-heading">woman</h3>
+                        <ul class="navigation-list">
+                            <li><a class="navigation-item" href="#">Accessories</a></li>
+                            <li><a class="navigation-item" href="#">Jackets & Coats</a></li>
+                            <li><a class="navigation-item" href="#">Polos</a></li>
+                            <li><a class="navigation-item" href="#">T-Shirts</a></li>
+                            <li><a class="navigation-item" href="#">Shirts</a></li>
+                        </ul>
+                        <h3 class="navigation-heading" class="navigation-list">kids</h3>
+                        <ul>
+                            <li><a class="navigation-item" href="#">Accessories</a></li>
+                            <li><a class="navigation-item" href="#">Jackets & Coats</a></li>
+                            <li><a class="navigation-item" href="#">Polos</a></li>
+                            <li><a class="navigation-item" href="#">T-Shirts</a></li>
+                            <li><a class="navigation-item" href="#">Shirts</a></li>
+                            <li><a class="navigation-item" href="#">Bags</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <li>
+                    <button class = "header__button mobile-hide"><img src="./img/man.svg" alt="prof"></button>
+                </li>
+                <li>
+                    <button class = "header__button mobile-hide"><img src="./img/cart.svg" alt="cart"></button>
+                </li>
+            </ul>
+            <div class="overlay-menu"></div>
+        </div>
+    </header>
+    <main>
+        <section class = "intro__catalog">
+            <div class="flex container">
+                <h1 class = "intro__catalog-heading">new arrivals</h1>
+                <p class="intro__catalog-text">home / men / <span class="catalog__text-intro">new arrivals</span></p>
+            </div>   
+        </section>
+        <section class="product__carousel">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active product__carousel-item">
+                        <img src="./img/product-carousel-1.jpg" class="carousel-item__img" alt="photo">
+                    </div>
+                    <div class="carousel-item product__carousel-item">
+                        <img src="./img/catalog-man-4.jpg" class="carousel-item__img" alt="photo">
+                    </div>
+                    <div class="carousel-item product__carousel-item">
+                        <img src="./img/fetured-man-1.jpg" class="carousel-item__img" alt="photo">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47 0H0V47H47V0Z" fill="#2A2A2A" fill-opacity="0.15"/>
+                        <path d="M29.6998 15.7499L21.9498 23.4999L29.6998 31.2499L28.1498 34.3499L17.2998 23.4999L28.1498 12.6499L29.6998 15.7499Z" fill="black"/>
+                    </svg>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47 0H0V47H47V0Z" fill="#2A2A2A" fill-opacity="0.15"/>
+                        <path d="M17.2998 31.2499L25.0498 23.4999L17.2998 15.7499L18.8498 12.6499L29.6998 23.4999L18.8498 34.3499L17.2998 31.2499Z" fill="#F16D7F"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="feature container">
+            <h2 class="feture__heading">women collection</h2>
+            <div class="feture__svg">
+                <svg width="63" height="4" viewBox="0 0 63 4" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M63 0.786865H0V3.81225H63V0.786865Z" fill="#EF5B70"/>
+                </svg>
+            </div>
+            <h3 class="feture__heading-after">moschino cheap and chic</h3>
+            <div class="feture__text-center">
+                <p class="feture__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+            </div>
+            <p class="feture__price">$561</p>
+            <div class="feture__svg-line">
+                <svg  width="642" height="2" viewBox="0 0 642 2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 1.49829H641.5H0.5Z" stroke="#EAEAEA" stroke-linejoin="round"/>
+                </svg>    
+            </div>
+            <div class="feture__dropdown-center">
+                <div class="dropdown">
+                    <button class="btn__dropdown btn__dropdown-mobile" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">choose color
+                        <svg style="margin-left: 10px;" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn__dropdown btn__dropdown-mobile" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">choose size
+                        <svg style="margin-left: 10px;" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn__dropdown btn__dropdown-mobile" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">quantity
+                        <svg style="margin-left: 10px;" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feture__button">
+                <button class = "feture__button-cart">
+                    <svg class="icon-cart" width="27" height="25" viewBox="0 0 27 25"xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z"/>
+                    </svg>
+                    Add to cart
+                </button>
+            </div>
+        </section>
+        <section class = fetured>
+            <h2 class = "visually-hidden"></h2>
+            <ul class = "fetured__list container">
+                <li class = "fetured__item">
+                    <img class="fetured__item-img" src="./img/fetured-man-1.jpg" alt="photo" width="360" height="420">
+                    <h3 class = "fetured__heading-item">ellery x m'o capsule</h3>
+                    <p class = "fetured__text-item">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class = "fetured__price-item">$52.00</p>
+                </li>
+                <li class = "fetured__item">
+                    <img class="fetured__item-img" src="./img/fetured-woman-2.jpg" alt="photo" width="360" height="420">
+                    <h3 class = "fetured__heading-item">ellery x m'o capsule</h3>
+                    <p class = "fetured__text-item">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class = "fetured__price-item">$52.00</p>
+                </li>
+                <li class = "fetured__item fetured__item-tablet">
+                    <img class="fetured__item-img" src="./img/fetured-man-pink-3.jpg" alt="photo" width="360" height="420">
+                    <h3 class = "fetured__heading-item">ellery x m'o capsule</h3>
+                    <p class = "fetured__text-item">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class = "fetured__price-item">$52.00</p>
+                </li>
+        </section>
+        <footer class = footer>
+            <div class = "footer__background-img">
+                <div class="footer__container container">
+                    <div class="footer__img">
+                        <img class="footer__img-img" src="./img/footer-face-copy.png" alt="photo" width="150" height="150">
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                    </div>
+                    <div class="footer__form">
+                        <p>subscribe <span class="footer__form-text">for our newletter and promotion</span></p>
+                        <form class = "form__index" action="" method="get">
+                            <input class="form__index-email" type="email" value="Enter Your Email">
+                            <button class="form__submit" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "footer__bottom">
+                <div class="footer__container-bottom container">
+                    <p class="footer__bottom-text">© 2021  Brand  All Rights Reserved.</p>
+                    <div class="footer__bottom-link">
+                        <button class="footer__icon"><svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15847 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <button class="footer__icon-inst"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.13897 3.68159C6.02383 3.68159 4.31774 5.38491 4.31774 7.49663C4.31774 9.60835 6.02383 11.3117 8.13897 11.3117C10.2541 11.3117 11.9602 9.60835 11.9602 7.49663C11.9602 5.38491 10.2541 3.68159 8.13897 3.68159ZM8.13897 9.9769C6.77211 9.9769 5.65467 8.8646 5.65467 7.49663C5.65467 6.12866 6.76878 5.01636 8.13897 5.01636C9.50915 5.01636 10.6233 6.12866 10.6233 7.49663C10.6233 8.8646 9.50583 9.9769 8.13897 9.9769ZM13.0078 3.52554C13.0078 4.02026 12.6087 4.41538 12.1165 4.41538C11.621 4.41538 11.2252 4.01694 11.2252 3.52554C11.2252 3.03413 11.6243 2.63569 12.1165 2.63569C12.6087 2.63569 13.0078 3.03413 13.0078 3.52554ZM15.5386 4.42866C15.4821 3.23667 15.2094 2.18081 14.3347 1.31089C13.4634 0.440967 12.4058 0.168701 11.2119 0.108936C9.9814 0.039209 6.29321 0.039209 5.0627 0.108936C3.8721 0.165381 2.81453 0.437646 1.93987 1.30757C1.06522 2.17749 0.795836 3.23335 0.735973 4.42534C0.666134 5.65386 0.666134 9.33608 0.735973 10.5646C0.79251 11.7566 1.06522 12.8124 1.93987 13.6824C2.81453 14.5523 3.86878 14.8246 5.0627 14.8843C6.29321 14.9541 9.9814 14.9541 11.2119 14.8843C12.4058 14.8279 13.4634 14.5556 14.3347 13.6824C15.2061 12.8124 15.4788 11.7566 15.5386 10.5646C15.6085 9.33608 15.6085 5.65718 15.5386 4.42866ZM13.949 11.8828C13.6895 12.5335 13.1874 13.0349 12.5322 13.2972C11.5511 13.6857 9.22314 13.596 8.13897 13.596C7.05479 13.596 4.72348 13.6824 3.74573 13.2972C3.09389 13.0382 2.59171 12.5369 2.32898 11.8828C1.93987 10.9033 2.02967 8.57905 2.02967 7.49663C2.02967 6.41421 1.9432 4.08667 2.32898 3.1105C2.58838 2.45972 3.09056 1.95835 3.74573 1.69604C4.7268 1.30757 7.05479 1.39722 8.13897 1.39722C9.22314 1.39722 11.5545 1.31089 12.5322 1.69604C13.184 1.95503 13.6862 2.4564 13.949 3.1105C14.3381 4.08999 14.2483 6.41421 14.2483 7.49663C14.2483 8.57905 14.3381 10.9066 13.949 11.8828Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button class="footer__icon"><svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.74032 0.203125C3.55564 0.203125 0.408203 2.34063 0.408203 5.8C0.408203 8 1.63738 9.25 2.38233 9.25C2.68963 9.25 2.86655 8.3875 2.86655 8.14375C2.86655 7.85313 2.13091 7.23438 2.13091 6.025C2.13091 3.5125 4.03055 1.73125 6.4889 1.73125C8.60271 1.73125 10.1671 2.94062 10.1671 5.1625C10.1671 6.82187 9.50597 9.93437 7.36422 9.93437C6.59133 9.93437 5.93018 9.37187 5.93018 8.56563C5.93018 7.38438 6.74963 6.24062 6.74963 5.02187C6.74963 2.95312 3.835 3.32812 3.835 5.82812C3.835 6.35313 3.90018 6.93437 4.13298 7.4125C3.70463 9.26875 2.82931 12.0344 2.82931 13.9469C2.82931 14.5375 2.91311 15.1188 2.96899 15.7094C3.07452 15.8281 3.02175 15.8156 3.18316 15.7563C4.74757 13.6 4.69169 13.1781 5.3994 10.3562C5.78119 11.0875 6.76826 11.4812 7.55046 11.4812C10.8469 11.4812 12.3275 8.24688 12.3275 5.33125C12.3275 2.22813 9.66427 0.203125 6.74032 0.203125Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <button class="footer__icon"><svg width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.417 3.74052C14.427 3.88264 14.427 4.0248 14.427 4.16692C14.427 8.50192 11.1498 13.4969 5.15986 13.4969C3.31448 13.4969 1.60022 12.9588 0.158203 12.0248C0.420396 12.0552 0.67247 12.0654 0.944752 12.0654C2.46741 12.0654 3.8691 11.5476 4.98843 10.6644C3.5565 10.6339 2.3565 9.68977 1.94305 8.39027C2.14475 8.4207 2.34642 8.44102 2.5582 8.44102C2.85063 8.44102 3.14308 8.40039 3.41533 8.32936C1.92291 8.02477 0.803551 6.70498 0.803551 5.11108V5.07048C1.23715 5.31414 1.74139 5.46642 2.2758 5.4867C1.39849 4.89786 0.823727 3.8928 0.823727 2.75573C0.823727 2.14661 0.985041 1.58823 1.26741 1.10092C2.87077 3.09077 5.28086 4.39023 7.98334 4.53239C7.93293 4.28873 7.90266 4.03495 7.90266 3.78114C7.90266 1.97402 9.35477 0.501953 11.1598 0.501953C12.0976 0.501953 12.9446 0.897891 13.5396 1.53748C14.2757 1.39536 14.9816 1.12123 15.6068 0.745609C15.3648 1.50705 14.8505 2.14664 14.1749 2.5527C14.8304 2.48167 15.4657 2.29889 16.0505 2.04511C15.6069 2.69483 15.0522 3.27348 14.417 3.74052Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -114,11 +114,13 @@
     color: $pink-dark-color;
     text-decoration: none;
     padding: 13px 38px;
+    transition: background-color 700ms, color 700ms;
 }
 
 .fetured__nextpage:hover {
     background-color: $pink-dark-color;
     color: $white;
+    transition: background-color 700ms, color 700ms;
 }
 
 .fetured__button-nextpage {
